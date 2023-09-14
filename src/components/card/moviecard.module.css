@@ -1,0 +1,100 @@
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+.movieposter{
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+}
+h5{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titlediv{
+    color: #fff;
+    font-size: 18px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+.card:hover .titlediv{
+    display: block;
+}
+
+.card:hover .movieposter{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    opacity: 0.9;
+}
+
+.card:hover{
+    background-color: #0565be;
+    transform: scale(1.04);
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 30px rgba(52, 152, 219, 0.9);
+    }
+}
+.circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: none;
+    position: relative;
+}
+.watch{
+    position: absolute;
+    top: 7px;
+    left: 13px;
+    color: #000;
+    font-weight: 600;
+}
+
+.card:hover .circle{
+    position: absolute;
+    top: 80px;
+    left: 115px;
+    display: block;
+}
+.container{
+    margin-left: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.searchdiv{
+    text-align: center;
+}
+.searchbar{
+    padding: 20px;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 8px #ccc;
+}
+.searchbar:focus{
+    outline: none;
+    border: 4px solid #ede9e9;
+    box-shadow: 0px 2px 5px #ccc, 2px -1px 8px yellow, -1px 2px 5px yellow;
+}
+.noRecFound{
+    color: #fff;
+    margin-left: 550px;
+}

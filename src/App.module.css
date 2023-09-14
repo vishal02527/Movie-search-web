@@ -1,0 +1,11 @@
+.content{
+    background-color: #032f59;
+    box-sizing: border-box;
+    padding: 70px 0px 10px;
+}
+.owner{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
